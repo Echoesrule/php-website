@@ -1,0 +1,170 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Logo / Profile */
+.profile img {
+    width: auto;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Search Bar */
+.search-bar {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 1rem;
+    display: flex;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #ffd43b;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ffc107;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+  
+}
+
+.nav-links a:hover {
+    color: #ffd43b;
+}
+
+/* Cart Badge */
+.cart {
+    position: relative;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #af1e1e;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .search-bar {
+        order: 3;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+.nav{
+
+    padding: 0 1rem;
+    height: auto;
+}
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        background-color: #0a0a0a;
+        width: 200px;
+        padding: 1rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

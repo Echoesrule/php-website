@@ -1,0 +1,97 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* Orders container */
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual order card */
+.order {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Order header / details */
+.order .details h3 {
+    margin: 0 0 15px;
+    color: #111;
+}
+
+.order .details .price {
+    color: #e67e22;
+    font-weight: 600;
+}
+
+/* Tables for ordered items */
+.order table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.order table th,
+.order table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.order table th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+}
+
+.order table tr:last-child td {
+    border-bottom: none;
+}
+
+/* No orders message */
+.orders p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .orders {
+        padding: 0 10px;
+    }
+
+    .order table th,
+    .order table td {
+        padding: 8px 10px;
+    }
+
+    .order .details h3 {
+        font-size: 1rem;
+    }
+}

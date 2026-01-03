@@ -1,0 +1,208 @@
+/* =========================
+   PAGE WRAPPER
+========================= */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* =========================
+   BACK LINK
+========================= */
+.back-link a {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.back-link a:hover {
+    color: #ffd43b;
+}
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.productinfo h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Product Content Grid */
+.product-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #dfdfdf;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+    max-width: 350px;
+}
+
+.product-details .price,
+.product-details .stock {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.product-details .description {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* =========================
+   ADD TO CART FORM
+========================= */
+#addtocart-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#addtocart-form label {
+    font-weight: 500;
+}
+
+#addtocart-form input[type="number"] {
+    width: 60px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#addtocart-form button {
+    padding: 0.5rem 1.2rem;
+    background-color: #ffd43b;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addtocart-form button:hover {
+    background-color: #ffc107;
+}
+
+#cart-message {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* =========================
+   RELATED PRODUCTS
+========================= */
+.related-section {
+    margin-top: 3rem;
+}
+
+.related-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.related-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.related-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.related-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.related-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.related-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.related-card a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: #ffd43b;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #000;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.related-card a:hover {
+    background-color: #ffc107;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .product-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

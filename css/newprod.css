@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+
+/* MAIN CARD */
+.product {
+    margin: 40px auto;
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+.product h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #222;
+}
+
+/* LABELS */
+.product label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* INPUTS */
+.product input[type="text"],
+.product input[type="number"],
+.product select,
+.product textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product textarea {
+  resize: vertical;
+}
+
+/* INPUT FOCUS */
+.product input:focus,
+.product select:focus,
+.product textarea:focus {
+  outline: none;
+  border-color: #0757ec;
+  box-shadow: 0 0 0 2px rgba(7, 87, 236, 0.15);
+}
+
+/* FILE INPUT */
+.product input[type="file"] {
+  border: none;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.Add-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: linear-gradient(90deg, #0154c0, #0757ec);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(7, 87, 236, 0.35);
+}
+
+/* ERROR MESSAGES */
+.product div[style*="color:red"] {
+  background: #ffe5e5;
+  border-left: 4px solid #e63946;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .product {
+    padding: 25px 20px;
+  }
+
+  .product h1 {
+    font-size: 20px;
+  }
+}

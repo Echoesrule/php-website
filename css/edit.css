@@ -1,0 +1,110 @@
+
+/* RESET (safe) */
+.edit * {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* PAGE WRAPPER */
+.edit {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADING */
+.edit h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f3640;
+    font-size: 1.8rem;
+}
+
+/* FORM */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABELS */
+.edit-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #353b48;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* INPUTS & TEXTAREA */
+.edit-form input[type="text"],
+.edit-form input[type="number"],
+.edit-form input[type="file"],
+.edit-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #dcdde1;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* TEXTAREA */
+.edit-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* FOCUS */
+.edit-form input:focus,
+.edit-form textarea:focus {
+    outline: none;
+    border-color: #40739e;
+    box-shadow: 0 0 0 2px rgba(64, 115, 158, 0.15);
+}
+
+/* SUBMIT BUTTON */
+.edit-form button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #44bd32;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+.edit-form button:hover {
+    background-color: #4cd137;
+}
+
+.edit-form button:active {
+    transform: scale(0.98);
+}
+
+/* BACK LINK */
+a[href*="Admin.php"] {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    color: #40739e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a[href*="Admin.php"]:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .edit {
+        margin: 20px;
+        padding: 25px;
+    }
+}

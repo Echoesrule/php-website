@@ -1,0 +1,163 @@
+/* =========================
+   BASE STYLES
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   DASHBOARD HEADER
+========================= */
+.update {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.update .new-prod {
+    background-color: #ffd43b;
+    color: #000;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.update .new-prod:hover {
+    background-color: #ffc107;
+}
+
+/* =========================
+   TABLE STYLES
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    border-bottom: #d3d2d2;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #0a0a0a;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eaeaea;
+}
+
+/* =========================
+   TITLE DIV
+========================= */
+.title {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.actions a {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.actions a:hover {
+    background-color: #333;
+}
+
+.delete-btn {
+    background-color: #af1e1e;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #ff4d4d;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    table, tr, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td {
+        text-align: right;
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 50%;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .actions {
+        justify-content: flex-end;
+    }
+}
