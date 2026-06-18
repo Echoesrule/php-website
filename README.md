@@ -1,5 +1,5 @@
 # Soko-fy
-PHP E-COMMERCE SHOP WEBSITE
+SOKO-FY  PHP E-COMMERCE SHOP WEBSITE
 ==========================
 
 Soko-fy is a full-featured PHP-based e-commerce web application with user authentication,
