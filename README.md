@@ -2,7 +2,7 @@
 PHP E-COMMERCE SHOP WEBSITE
 ==========================
 
-A full-featured PHP-based e-commerce web application with user authentication,
+Soko-fy is a full-featured PHP-based e-commerce web application with user authentication,
 product browsing, cart management, orders, admin dashboard, and search
 functionality.
 
